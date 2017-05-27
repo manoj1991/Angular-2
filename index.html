@@ -9,9 +9,21 @@
 		padding:50px 0;
 		}
 	</style>
+	<!--js-->
+	<!-- Load the dependencies -->
+	<script src="node_modules/core-js/client/shim.min.js"></script>
+	<script src="node_modules/zone.js/dist/zone.js"></script>
+	<script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+	<!-- Load Angular dependencies-->
+	<script srsc="node_modules/systemjs/dist/system.src.js"></script>
+	<script src="systemjs.config.js"></script>
+   	<script>
+    	System.import('app').catch(function(err) { console.error(err); });
+    </script>
 </head>
 <body class="container">
-I am the app!
+<my-app></my-app>
 
 </body>
 </html>
